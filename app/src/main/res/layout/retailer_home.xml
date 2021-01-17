@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:layout_marginBottom="60dp"
+
+    android:orientation="vertical"
+    android:background="@color/white">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    android:orientation="horizontal">
+
+        <com.alexzh.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/user"
+            android:layout_marginLeft="25dp"
+            app:view_borderColor="@color/purple"
+            android:background="@color/white"
+            app:view_borderWidth="3dp" />
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="25dp">
+
+        <TextView
+            android:id="@+id/shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom"
+            android:elevation="30dp"
+            android:padding="12dip"
+            android:text="mallname"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="bottom"
+        android:elevation="30dp"
+        android:padding="12dip"
+        android:text="cate"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+</LinearLayout>
+</LinearLayout>
+
+    <!--<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_height="405dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="4dp" />
+
+
+
+</LinearLayout>-->
+
+
+    <View android:layout_height="12dp"
+        android:background="@color/gray_lite"
+        android:layout_width="match_parent"
+
+        android:layout_below="@+id/relativemiddle"
+        android:paddingTop="60dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relast"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativemiddle">
+
+        <TextView
+            android:id="@+id/category_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Shop Ratings"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <View android:layout_height="1dp"
+            android:background="@color/purple"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/category_lable"
+            android:id="@+id/line_below_category"
+            android:layout_marginTop="5dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_lable"
+            android:id="@+id/item_review_recycleview"
+            android:layout_marginTop="5dp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relast1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativemiddle">
+
+        <TextView
+            android:id="@+id/category_lable1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Products Ratings"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <View android:layout_height="1dp"
+            android:background="@color/purple"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/category_lable1"
+            android:id="@+id/line_below_category1"
+            android:layout_marginTop="5dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_lable1"
+            android:id="@+id/item_review_recycleview1"
+            android:layout_marginTop="5dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:scrollbarSize="2dp"
+    android:layout_gravity="center_horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:columnCount="2"
+            app:layout_columnWeight="50"
+            app:rowCount="5"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:view_borderWidth="1dp"
+                app:cardCornerRadius="10dp"
+                app:layout_column="1"
+                app:layout_row="0"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:background="@color/bg_gray"
+                        android:src="@drawable/img1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lenovo Ideapad 310 laptop"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7,999 EGP"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:layout_column="0"
+                app:layout_row="0"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_border">
+
+                    <ImageView
+                        android:id="@+id/tpic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:background="@color/white"
+                        android:src="@drawable/img1" />
+
+                    <TextView
+                        android:id="@+id/tname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lenovo Ideapad 310 laptop"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RM 1000"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:view_borderColor="@color/colorPrimaryDark"
+                app:view_borderWidth="1dp"
+                app:layout_column="1"
+                app:layout_row="0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_border">
+
+                    <ImageView
+                        android:id="@+id/tpic2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:background="@color/white"
+                        android:src="@drawable/img1" />
+
+                    <TextView
+                        android:id="@+id/tname2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lenovo Ideapad 310 laptop"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tprice2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RM 1000"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c3"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:layout_column="0"
+                app:layout_row="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_border">
+
+                    <ImageView
+                        android:id="@+id/tpic3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:background="@color/white"
+                        android:src="@drawable/img1" />
+
+                    <TextView
+                        android:id="@+id/tname3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lenovo Ideapad 310 laptop"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tprice3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RM 1000"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c4"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:layout_column="1"
+                app:layout_row="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_border">
+
+                    <ImageView
+                        android:id="@+id/tpic4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:background="@color/white"
+                        android:src="@drawable/img1" />
+
+                    <TextView
+                        android:id="@+id/tname4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lenovo Ideapad 310 laptop"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/tprice4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RM 1000"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </androidx.gridlayout.widget.GridLayout>
+    </LinearLayout>
+</ScrollView>

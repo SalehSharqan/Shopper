@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/viewTitle77"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/picsearch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cammm" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:iconifiedByDefault="false"
+            android:searchIcon="@null"
+
+            android:queryHint="Search Here" />
+
+    </LinearLayout>
+
+<!--
+        <View android:layout_height="1dp"
+            android:background="@color/purple"
+            android:layout_marginTop="5dp"
+            android:layout_width="380dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/viewTitle77"
+            android:id="@+id/line_below_title77"
+            />-->
+
+        <View android:layout_height="3dp"
+            android:background="#FAFAFA"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/viewTitle"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/slid"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                >
+            </androidx.viewpager.widget.ViewPager>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/image_page_dots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+
+        <!--  <include layout="@layout/category_layout" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Browse By Categories"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <View android:layout_height="3dp"
+            android:background="#FAFAFA"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/viewTitle"
+            android:id="@+id/line_below_title"
+            />
+
+
+        <include
+            android:id="@+id/catlayout"
+            layout="@layout/card_brand_home" />
+
+        <View android:layout_height="15dp"
+            android:background="#FAFAFA"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/viewTitle"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Top Products"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+
+        <include layout="@layout/card_item_home"
+            android:id="@+id/playout"/>
+
+        <include layout="@layout/navg_bar" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

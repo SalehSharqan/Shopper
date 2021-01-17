@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shopper</string>
+    <!-- Strings used by Mapwize Fragment. You can use them to translate the Fragment
+    text or change them.
+    Those values override the default strings value found in mapwizecomponent project-->
+    <string name="time_placeholder">%1$d min</string>
+    <string name="floor_placeholder">Floor %1$s</string>
+    <string name="search_in_placeholder">Search in %1$s…</string>
+    <string name="search_venue">Search a venue…</string>
+    <string name="loading_venue_placeholder">Loading %1$s…</string>
+    <string name="current_location">Current location</string>
+    <string name="choose_language">Choose your language</string>
+    <string name="choose_universe">Choose your universe</string>
+    <string name="direction">Direction</string>
+    <string name="information">Information</string>
+    <string name="starting_point">Starting point</string>
+    <string name="destination">Destination</string>
+
+    <string name="home">   Home</string>
+    <string name="logout">  Log out</string>
+    <string name="history">  History</string>
+    <string name="mycart">  My Cart</string>
+    <string name="category">  Categories</string>
+    <string name="hotdeals">  Hot Deals</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="Home">Home</string>
+    <string name="Mall">Mall</string>
+    <string name="Shops">Shops</string>
+    <string name="Search">Search</string>
+    <string name="Map">Map</string>
+    <string name="Adds">Adds</string>
+    <string name="about_mall">ABOUT MALL</string>
+    <string name="rates">RATES</string>
+    <string name="directions">DIRECTIONS</string>
+    <string name="facilities">FACILITIES</string>
+    <string name="timing">TIMING</string>
+    <string name="homeR">HOME</string>
+    <string name="products">PRODUCTS</string>
+    <string name="feedback">FEEDBACK</string>
+    <string name="offers">OFFERS</string>
+    <string name="addsr">AddsR</string>
+    <string name="tfe_ic_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+
+</resources>

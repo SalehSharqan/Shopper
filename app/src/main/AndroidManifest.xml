@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.mapwize.mapwizeuicomponents">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.samsung.permission.SSENSOR" />
+    <uses-permission android:name="com.samsung.permission.HRM_EXT" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".MapwizeApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Fragments.UpdatePassRet"></activity>
+        <activity android:name=".Fragments.retCart" />
+        <activity android:name=".Fragments.UpdatePass" />
+        <activity
+            android:name=".Activities.ShopRegister"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.AdminLogin"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".Activities.ManageRetailers" />
+        <activity android:name=".Fragments.Notes" />
+        <activity android:name=".Fragments.Receipts" />
+        <activity android:name=".Fragments.Favorites" />
+        <activity android:name=".Fragments.ProductsByCategory" />
+
+        <provider
+            android:name=".Activities.MySuggestionProvider"
+            android:authorities="com.example.MySuggestionProvider" />
+
+        <activity android:name=".Activities.searchable" />
+        <activity android:name=".Fragments.retProfile" />
+        <activity
+            android:name=".Activities.UpdatePassoword"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".MapView"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".Adapters.OffersAdapter" />
+        <activity android:name=".Fragments.OffersList" />
+        <activity android:name=".Fragments.ModifyProduct" />
+        <activity android:name=".Fragments.ReProductsList" />
+        <activity android:name=".Fragments.AddImages" />
+        <activity android:name=".Fragments.ProductsList" />
+        <activity android:name=".Fragments.ProductInfo" />
+        <activity android:name=".Fragments.ShopInfo" />
+        <activity android:name=".Search.CustomAdapterActivity" />
+        <activity android:name=".Activities.RetailerMain" />
+        <activity
+            android:name=".Activities.PreRegister"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.Register"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activities.Login"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".Fragments.Add_Product" />
+        <activity android:name=".Fragments.RetailerHome" />
+        <activity android:name=".Fragments.ShopsList" />
+        <activity android:name=".Fragments.MallDetailsFragment" />
+        <activity android:name=".Fragments.MallsFragment" />
+        <activity android:name=".Fragments.HomeFragment" />
+        <activity android:name=".Activities.Main" />
+        <activity android:name=".Activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

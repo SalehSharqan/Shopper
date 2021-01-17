@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="245dp"
+            android:layout_gravity="center_horizontal"
+            cardview:cardElevation="4dp"
+            cardview:cardCornerRadius="5dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView"
+                    android:scaleType="centerCrop"
+                    android:layout_centerInParent="true"
+                    />
+            <TextView
+                android:id="@+id/Mall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom"
+                android:padding="12dip"
+                android:elevation="30dp"
+                android:text="mallname"
+                android:textSize="20dp"
+                android:textColor="#ffffffff" />
+        </androidx.cardview.widget.CardView>
+
+
+
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    <Button
+        android:id="@+id/aboutmall"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/mall_buttons"
+        android:text="@string/about_mall"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+       />
+
+    <Button
+        android:id="@+id/rates"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/mall_buttons"
+        android:text="@string/rates"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        cardview:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/timing"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/mall_buttons"
+            android:text="@string/timing"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            cardview:ignore="ButtonStyle"
+            android:layout_marginStart="5dp" />
+
+        <Button
+            android:id="@+id/directions"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/mall_buttons"
+            android:text="@string/directions"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            cardview:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/facilities"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mall_buttons"
+            android:text="@string/facilities"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            cardview:ignore="ButtonStyle"
+            android:layout_marginStart="5dp" />
+
+
+    </LinearLayout>
+
+</HorizontalScrollView>
+
+
+        <TextView
+            android:id="@id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            />
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:src="@drawable/mao5" />
+
+            <ImageView
+                android:id="@+id/uber"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:src="@drawable/uber"/>
+
+            <ImageView
+                android:id="@+id/grab"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:src="@drawable/grab2"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

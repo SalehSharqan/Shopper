@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.mapwize.mapwizeuicomponents">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+
+    android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:name=".MapwizeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".tryie"/>
+        <activity
+            android:name=".MapView"
+            android:windowSoftInputMode="adjustNothing">
+        </activity>
+        <activity android:name=".Adapters.OffersAdapter" />
+        <activity android:name=".Fragments.OffersList" />
+        <activity android:name=".Fragments.ModifyProduct" />
+        <activity android:name=".Fragments.ReProductsList" />
+        <activity android:name=".Fragments.AddImages" />
+        <activity android:name=".Fragments.ProductsList" />
+        <activity android:name=".Fragments.ProductInfo" />
+        <activity android:name=".Fragments.ShopInfo" />
+        <activity android:name=".Activities.RetailerMain" />
+        <activity android:name=".Activities.PreRegister" />
+        <activity android:name=".Activities.Register" />
+        <activity
+            android:name=".Activities.Login"
+            android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".Fragments.Add_Product" />
+        <activity android:name=".Fragments.RetailerHome" />
+        <activity android:name=".Fragments.ShopsList" />
+        <activity android:name=".Fragments.MallDetailsFragment" />
+        <activity android:name=".Fragments.MallsFragment" />
+        <activity android:name=".Fragments.HomeFragment" />
+        <activity android:name=".Activities.Main">
+        </activity>
+    </application>
+
+</manifest>

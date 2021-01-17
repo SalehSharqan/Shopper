@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:scrollbarSize="2dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:alignmentMode="alignBounds"
+            app:columnCount="12"
+            app:layout_columnWeight="4"
+            app:rowCount="1"
+            app:useDefaultMargins="true">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/change"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="50dp"
+                        android:src="@drawable/fashj2"
+                        app:view_borderColor="@color/purple"
+                        app:view_borderWidth="1dp"
+                         />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Fashion"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/change2"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="50dp"
+                        android:src="@drawable/mo"
+                        app:view_borderColor="@color/purple"
+                        app:view_borderWidth="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:text="Mobiles &amp; Electronics"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:background="#FAFAFA" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/change3"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="50dp"
+                        android:src="@drawable/hime"
+                        app:view_borderColor="@color/purple"
+                        app:view_borderWidth="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:text="Home &amp; Living"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:background="#FAFAFA" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/change4"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="50dp"
+                        android:src="@drawable/da"
+                        app:view_borderColor="@color/purple"
+                        app:view_borderWidth="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:text="Daily Needs"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:background="#FAFAFA" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/change5"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="50dp"
+                        android:src="@drawable/so"
+                        app:view_borderColor="@color/purple"
+                        app:view_borderWidth="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Sports"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:background="#FAFAFA" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/change6"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="50dp"
+                        android:src="@drawable/ba"
+                        app:view_borderColor="@color/purple"
+                        app:view_borderWidth="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:text="Baby &amp; Kids"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:background="#FAFAFA" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/change7"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="50dp"
+                        android:src="@drawable/bo"
+                        app:view_borderColor="@color/purple"
+                        app:view_borderWidth="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:text="Books"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:background="#FAFAFA" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/change8"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:paddingLeft="50dp"
+                        android:src="@drawable/dots"
+                        app:view_borderColor="@color/purple"
+                        app:view_borderWidth="1dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:text="Others"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:background="#FAFAFA" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.gridlayout.widget.GridLayout>
+    </LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeR"
+        android:icon="@drawable/ic_action_home"
+        android:title="@string/homeR" />
+
+    <item
+        android:id="@+id/products"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/products" />
+
+
+    <item
+        android:id="@+id/feedback"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/feedback" />
+
+    <item
+        android:id="@+id/offers"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="@string/offers" />
+
+
+    <item
+        android:id="@+id/addsr"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/addsr" />
+
+
+</menu>

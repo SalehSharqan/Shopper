@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:elevation="3dp">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:contentInsetStart="0dp"
+        app:elevation="3dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:searchBackground="@color/colorPrimary"
+            app:searchSuggestionBackground="@color/colorPrimary"
+            app:searchCloseIcon="@drawable/ic_action_navigation_close_inverted"
+            app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"
+            app:searchSuggestionIcon="@drawable/ic_suggestion"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:layout_gravity="center_vertical"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+</com.google.android.material.appbar.AppBarLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Forgot Your Passowrd?"
+        android:textColor="@color/orange"
+        android:textSize="40dp" />
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/messageTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        app:boxStrokeColor="@color/colors"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/orange"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/send"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="#ff6d22"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="RESET PASSWORD"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!--
+        <RadioGroup
+            android:id="@+id/usergrp"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Retailer"
+                android:id="@+id/radioButton"
+                android:checked="false"
+                android:textColor="@color/white"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Customer"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:id="@+id/radioButton3"
+                android:checked="false"
+                android:textColor="@color/white"
+                />
+        </RadioGroup>
+    -->
+
+
+
+
+
+        <TextView
+            android:id="@+id/sing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="SIGN IN"
+            android:textColor="@color/orange"
+            android:textSize="20dp" />
+
+
+
+
+    <!--   <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:gravity="center"
+           android:text="login with"
+           android:textColor="@color/colorPrimary"
+           android:textSize="18dp"
+           android:textStyle="bold" />-->
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fb_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/fb" />
+
+        <ImageView
+            android:id="@+id/gplus_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/gplus" />
+
+        <ImageView
+            android:id="@+id/twt_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/twiter" />
+    </LinearLayout>-->
+
+
+</LinearLayout>
